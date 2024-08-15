@@ -1,0 +1,229 @@
+/*General Styles*/
+body{
+    font-size: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;/*Prevent scrolling*/
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+header{
+    background-color:#2805d3 ;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+/*Page Backgrounds*/
+#home{
+    background-image: url('home-background.jpeg');/*Replace with your image*/
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    text-align: center;
+    padding: 120px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#collection{
+    background-image: url('collection-background.jpeg');/*Replace with your image*/
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about{
+    background-image: url('about-background.jpeg');/*Replace with your image*/
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact{
+    background-image: url('about-background.jpeg');/*Replace with your image*/
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Hero Section*/
+.hero-content h1{
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero-content p{
+    font-size: 24px;
+    margin : 0;
+}
+
+.home-logo{
+    max-width: 350px;/*Adjust as needed*/
+    margin: 0 auto 20px;
+    display: block;
+    border: 5px solid #f6e390; /*Add a solid border*/
+    border-radius: 10px;/*Optional: make the corners rounded*/
+}
+
+/*Collection Section*/
+.collection-section{
+    padding: 50px 20px;
+    padding-bottom: 100px;/*Increase padding at the bottom*/
+    text-align: center;
+}
+
+.collection-section h2{
+    color: #2805d3;
+}
+
+.grid-collection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;/*Keep items aligned at the top*/
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.collection-item{
+    border: 1px solid #f59af3;
+    padding: 20px;
+    background-color: rgba(156, 144, 248, 0.9);
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;/*Ensures padding is included in the width*/
+}
+
+.collection-item img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/*About Section*/
+.about-section{
+    background-color:#2805d3 ;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section p{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #360486;
+}
+.about-section h2{
+    color: #360486;
+} 
+
+/*Contact Section*/
+.contact-section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2{
+    color: #360486;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea{
+    padding: 10px;
+    border: 1px solid #1a0288;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-section button{
+    padding: 10px;
+    background-color: rgba(156, 144, 248, 0.9);
+    color: #090018;
+    border: none;
+    cursor: pointer;
+}
+
+#form-message p{
+    color: red;
+}
+
+/*Footer*/
+footer{
+    background-color: #2805d3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
